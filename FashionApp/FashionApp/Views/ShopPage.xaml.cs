@@ -25,27 +25,33 @@ namespace FashionApp.Views
 
         private List<Banner> GetBanners()
         {
-            var bannerList = new List<Banner>();
-            bannerList.Add(new Banner { Heading = "SUMMER COLLECTION", Message = "40% Discount", Caption = "BEST DISCOUNT THIS SEASON", Image = "classic.png" });
-            bannerList.Add(new Banner { Heading = "WOMEN'S CLOTHINGS", Message = "UP TO 50% OFF", Caption = "GET 50% OFF ON EVERY ITEM", Image = "womenCol.png" });
-            bannerList.Add(new Banner { Heading = "ELEGANT COLLECTION", Message = "20% Discount", Caption = "UNIQUE COMBINATIONS OF ITEMS", Image = "elegantCol.png" });
+            var bannerList = new List<Banner>
+            {
+                new Banner { Heading = "SUMMER COLLECTION", Message = "40% Discount", Caption = "BEST DISCOUNT THIS SEASON", Image = "classic.png" },
+                new Banner { Heading = "WOMEN'S CLOTHINGS", Message = "UP TO 50% OFF", Caption = "GET 50% OFF ON EVERY ITEM", Image = "womenCol.png" },
+                new Banner { Heading = "ELEGANT COLLECTION", Message = "20% Discount", Caption = "UNIQUE COMBINATIONS OF ITEMS", Image = "elegantCol.png" }
+            };
             return bannerList;
         }
 
         private List<Product> GetCollections()
         {
-            var trendList = new List<Product>();
-            trendList.Add(new Product { Image = "floral.png", Name = "Floral Bag + Hat", Price = "$123.50" });
-            trendList.Add(new Product { Image = "satchel.png", Name = "Satchel Bag", Price = "$49.99" });
-            trendList.Add(new Product { Image = "leatherBag.png", Name = "Leather Bag", Price = "$40.99" });
+            var trendList = new List<Product>
+            {
+                new Product { Image = "floral.png", Name = "Floral Bag + Hat", Price = "$123.50" },
+                new Product { Image = "satchel.png", Name = "Satchel Bag", Price = "$49.99" },
+                new Product { Image = "leatherBag.png", Name = "Leather Bag", Price = "$40.99" }
+            };
             return trendList;
         }
 
         private List<Product> GetTrends()
         {
-            var colList = new List<Product>();
-            colList.Add(new Product { Image = "heeledShoe.png", Name = "Beige Heeled Shoe", Price = "$109.99" });
-            colList.Add(new Product { Image = "dressShoe.png", Name = "Shoe + Addons", Price = "$225.99" });
+            var colList = new List<Product>
+            {
+                new Product { Image = "heeledShoe.png", Name = "Beige Heeled Shoe", Price = "$109.99" },
+                new Product { Image = "dressShoe.png", Name = "Shoe + Addons", Price = "$225.99" }
+            };
             return colList;
         }
 
